@@ -1,0 +1,16 @@
+<?php
+require_once('/ebs1/home/y-haraguchi/php/simpletest/autorun.php');
+require_once('hitorigameUtil.php');
+class hitorigameTest extends UnitTestCase {
+
+    function testHitoriGame()
+    {
+        $this->assertEqual(getMinimumCount(array(10)), 1);
+        $this->assertEqual(getMinimumCount(array(11)), 2);
+        $this->assertEqual(getMinimumCount(array(12)), 5);
+        $this->assertEqual(getMinimumCount(array(10, 21)), 2);
+        $this->assertEqual(getMinimumCount(array(0, 9, 9)), 5);
+        $this->assertEqual(getMinimumCount(array(81, 67, 83, 86)), 8);
+        $this->assertEqual(getMinimumCount(array(11, 22, 30)), 4);
+    }
+}

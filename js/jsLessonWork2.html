@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+
+<script type="text/javascript">
+
+for (i = 1; i < 11; i++) {
+    if (i % 3 === 0) {
+        document.write('ヾ(´ﾟдﾟ｀)ﾉ゛"<br />');
+        continue;
+    }
+    document.write(i + '<br />');
+}
+
+
+document.write('<table border="2">');
+
+for (i = 1; i < 31; i++) {
+    if (i % 7 === 1) {
+        document.write('<tr><td><span style="color:red">' + i + '</span></td>');
+        continue;
+    }
+    if (i % 7 === 0) {
+        document.write('<td><span style="color:blue">' + i + '</span></td></tr><br />');
+        continue;
+    }
+    if (i === 25) {
+        document.write('<td><span style=font-weight:bold;>' + i + '</span></td>');
+        continue;
+    }
+    document.write('<td>' + i + '</td>');
+}
+
+document.write('</table>');
+
+</script>
+
+</body>
+</html>

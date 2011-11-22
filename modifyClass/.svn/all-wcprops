@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/y-haraguchi/!svn/ver/97/trunk/public_html/review/modifyClass
+END
+stackPush.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/y-haraguchi/!svn/ver/97/trunk/public_html/review/modifyClass/stackPush.class.php
+END
+setUtil.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/y-haraguchi/!svn/ver/97/trunk/public_html/review/modifyClass/setUtil.class.php
+END
+execSomeClass.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/y-haraguchi/!svn/ver/97/trunk/public_html/review/modifyClass/execSomeClass.php
+END
+queueEnqueue.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/y-haraguchi/!svn/ver/97/trunk/public_html/review/modifyClass/queueEnqueue.class.php
+END
+getUtil.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/y-haraguchi/!svn/ver/97/trunk/public_html/review/modifyClass/getUtil.class.php
+END
+testClass.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/y-haraguchi/!svn/ver/97/trunk/public_html/review/modifyClass/testClass.php
+END
+const.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/y-haraguchi/!svn/ver/97/trunk/public_html/review/modifyClass/const.php
+END
+queueDequeue.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/y-haraguchi/!svn/ver/97/trunk/public_html/review/modifyClass/queueDequeue.class.php
+END
+stackPop.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/y-haraguchi/!svn/ver/97/trunk/public_html/review/modifyClass/stackPop.class.php
+END
