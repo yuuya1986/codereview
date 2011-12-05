@@ -11,14 +11,26 @@ class PlayBowling
 
     public function __construct()
     {
-        foreach (func_get_args() as $users) {
-            $resultValidate =$this->_validateUserName($users);
-//           if (!$resultValidate) {
-//                require_once 'PlayBowlingError.php';
-//                exit;
-//                }
-            $this->_usersName = $users;
+        // ループ変数設定
+        $i = 0;
+
+        // 未入力項目の削除
+        foreach ($_POST['usersName'] as $row) {
+            if (empty($row)) unset($_POST['usersName'][$i]);
+            $i++;
         }
+        $i = '';
+
+        // ユーザーが一人も入力されていないばあいエラーページに飛ばす
+        if (empty($_POST['usersName'])) {
+            $errorMessages[] = 'ユーザーを一人は入力してください';
+            require_once 'Error.php';
+            exit;
+        }
+
+        $this->_usersName = $_POST['usersName'];
+
+
     }
 
     public function playBowling()
@@ -52,7 +64,7 @@ class PlayBowling
             // viewの呼び出し
             require './PlayBowlingView.php';
         }
-        // 順位表示ロジックの呼び出し
+       // 順位表示ロジックの呼び出し
         require_once 'Ranking.php';
         require_once 'footer.tpl';
     }

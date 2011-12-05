@@ -13,7 +13,7 @@
  *
  */
 
-$postedUsers = $_POST['userName'];
+$postedUsers = $_POST['usersName'];
 
 require_once 'PlayBowling.class.php';
 
