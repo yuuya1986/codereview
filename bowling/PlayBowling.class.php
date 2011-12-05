@@ -21,7 +21,7 @@ class PlayBowling
         }
         $i = '';
 
-        // ユーザーが一人も入力されていないばあいエラーページに飛ばす
+        // ユーザーが一人も入力されていない場合エラーページに飛ばす
         if (empty($_POST['usersName'])) {
             $errorMessages[] = 'ユーザーを一人は入力してください';
             require_once 'Error.php';
