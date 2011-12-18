@@ -21,9 +21,14 @@ require_once $currentDir . '/../model/class.php';
 $magic = new MagicSquare();
 
 // POSTで受け取った値を変数に代入
-$over   = $_POST['overRecord'];
-$middle = $_POST['middleRecord'];
-$under  = $_POST['underRecord'];
+if (!empty($_POST['overRecord']))   $over   = $_POST['overRecord'];
+if (!empty($_POST['middleRecord'])) $middle = $_POST['middleRecord'];
+if (!empty($_POST['underRecord']))  $under  = $_POST['underRecord'];
+
+// POSTの値がない場合トップページにリダイレクト
+if(empty($over) || empty($middle) || empty($under)) {
+    header("Location:http://y-haraguchi.s-tanno.com/codereview/magicSquare/controller/");
+}
 
 // 配列の値の数が3つか検証
 $overResult   = $magic->checkDataNum($over);
