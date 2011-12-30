@@ -30,7 +30,7 @@ class MagicSquare {
     }
 
     //
-    public function checkMaziqSquare()
+    public function checkMagicSquare()
     {
         $this->_checkDataNum();
         $this->_checkDataLack();

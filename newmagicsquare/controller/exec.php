@@ -31,7 +31,7 @@ $magic = new MagicSquare($over, $middle, $under);
 
 // 魔方陣チェックを実行
 try {
-$magic->checkMaziqSquare();
+$magic->checkMagicSquare();
 require_once $currentDir . '/../view/correctAnswerTemplate.php';
 
 } catch (Exception $e) {
