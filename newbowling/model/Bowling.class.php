@@ -117,10 +117,10 @@ class Bowling
     {
         // スコアをフレーム、投球数毎に記録
         $this->_throwCount++;
-        $this->score[$user][$flameNum][1]         = $this->_fullPinThrow();
+        $this->score[$user][$flameNum][1]          = $this->_fullPinThrow();
         $this->_eachThrowScore[$this->_throwCount] = $this->score[$user][$flameNum][1];
 
-        $this->score[$user][$flameNum][2]         = $this->_remeinPinThrow($this->score[$user][$flameNum][1]);
+        $this->score[$user][$flameNum][2]          = $this->_remeinPinThrow($this->score[$user][$flameNum][1]);
 
         // ストライクを取った場合の処理
         if ($this->score[$user][$flameNum][1] === self::FULL_PIN_NUM) {
@@ -160,7 +160,7 @@ class Bowling
         }
 
         // 投球数毎のスコアを記録
-        $this->_eachThrowScore[$this->_throwCount]    = $this->score[$user][self::LAST_FLAME][2];
+        $this->_eachThrowScore[$this->_throwCount] = $this->score[$user][self::LAST_FLAME][2];
 
         // 3投目を投げるかつ、10本のピンが残っている場合の処理
         if (array_sum($this->score[$user][self::LAST_FLAME]) !== 0 && (array_sum($this->score[$user][self::LAST_FLAME]) % 10) === 0) {
