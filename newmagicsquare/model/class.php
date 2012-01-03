@@ -20,7 +20,9 @@ class MagicSquare {
     private $_verticalSum;
     private $_diagonalSum;
 
-    // 横列ごとの各値と全ての値をまとめたものを初期化
+    /**
+     * 横列ごとの各値と全ての値をまとめたものを初期化
+     */
     public function __construct($over, $middle, $under)
     {
         $this->_over    = $over;
@@ -29,7 +31,9 @@ class MagicSquare {
         $this->_allNums = array_merge($over, $middle, $under);
     }
 
-    //
+    /**
+     * メソッドの実行
+     */
     public function checkMagicSquare()
     {
         $this->_checkDataNum();
