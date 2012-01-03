@@ -220,7 +220,9 @@ class Bowling
         return $eachFlameScore;
     }
 
-    // 全フレームのスコアを集計
+    /**
+     * 全フレームのスコアを修正
+     */
     private function _setSumAllFlameScore($user)
     {
         $this->score[$user]['allFlameScore'] = array_sum($this->score[$user]['eachFlameScore']);
