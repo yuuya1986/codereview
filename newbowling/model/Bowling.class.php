@@ -41,7 +41,7 @@ class Bowling
     /**
      * 最終的なメソッドの実行
      */
-    public function showResult()
+    public function setResult()
     {
         foreach ($this->_users as $user) {
 

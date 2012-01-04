@@ -87,7 +87,7 @@ class PlayBowling
             return;
         } else {
             $this->_throwCount++;
-            $this->_flameScore[$i][2]            = $this->_remainPinThrow($this->_flameScore[$i][1]);
+            $this->_flameScore[$i][2]                  = $this->_remainPinThrow($this->_flameScore[$i][1]);
             $this->_eachThrowScore[$this->_throwCount] = $this->_flameScore[$i][2];
         }
 
@@ -115,11 +115,9 @@ class PlayBowling
         // ストライクを取った場合の処理
         if ($this->_flameScore[LAST_FLAME][1] === FULL_PIN_NUM) {
             $this->_flameScore[LAST_FLAME][2] = $this->_fullPinThrow();
-            $this->_eachThrowScore[$this->_throwCount] = $this->_flameScore[LAST_FLAME][2];
 
         } else {
             $this->_flameScore[LAST_FLAME][2] = $this->_remainPinThrow($this->_flameScore[LAST_FLAME][1]);
-            $this->_eachThrowScore[$this->_throwCount] = $this->_flameScore[LAST_FLAME][2];
         }
 
         $this->_eachThrowScore[$this->_throwCount] = $this->_flameScore[LAST_FLAME][2];

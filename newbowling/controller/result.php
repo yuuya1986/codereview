@@ -7,7 +7,7 @@ require_once $currentDir . '/../model/Bowling.class.php';
 
 try {
     $bowling = new Bowling($_POST['userNames']);
-    $bowling->showResult();
+    $bowling->setResult();
     require_once $currentDir . '/../view/resultTemplate.php';
 
 } catch (Exception $e) {
