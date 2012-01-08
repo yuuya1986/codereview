@@ -39,9 +39,9 @@ class MagicSquare {
         $this->_checkDataNum();
         $this->_checkDataLack();
         $this->_checkDataInt();
-        $this->_checkSideLongSum();
-        $this->_checkVerticalSum();
-        $this->_checkDiagonalSum();
+        $this->_setSideLongSum();
+        $this->_setVerticalSum();
+        $this->_setDiagonalSum();
         $this->_checkAllSum();
     }
 
@@ -102,7 +102,7 @@ class MagicSquare {
      */
     private function _setSideLongSum()
     {
-        $this->_sideLongSum = $this->_checkSideLongSum;
+        $this->_sideLongSum = $this->_checkSideLongSum();
     }
 
     /**
