@@ -16,8 +16,8 @@
         </tr>
         <tr>
             <td><input type="text" name="middleRecord[]" size="3" maxlength="4" value="<?php if (!empty($middle[0])) echo h($middle[0]); ?>"></td>
-            <td><input type="text" name="middleRecord[]" size="3" maxlength="4" value="<?php if (!empty($middle[0])) echo h($middle[1]); ?>"></td>
-            <td><input type="text" name="middleRecord[]" size="3" maxlength="4" value="<?php if (!empty($middle[0])) echo h($middle[2]); ?>"></td>
+            <td><input type="text" name="middleRecord[]" size="3" maxlength="4" value="<?php if (!empty($middle[1])) echo h($middle[1]); ?>"></td>
+            <td><input type="text" name="middleRecord[]" size="3" maxlength="4" value="<?php if (!empty($middle[2])) echo h($middle[2]); ?>"></td>
         </tr>
         <tr>
             <td><input type="text" name="underRecord[]" size="3" maxlength="4" value="<?php if (!empty($under[0])) echo h($under[0]); ?>"></td>
