@@ -221,7 +221,7 @@ class Bowling
     }
 
     /**
-     * 全フレームのスコアを修正
+     * 全フレームのスコアをセット
      */
     private function _setSumAllFlameScore($user)
     {
@@ -238,7 +238,6 @@ class Bowling
 
         // スコアの途中経過をセット
         for ($i = self::FIRST_FLAME; $i <= self::LAST_FLAME; $i++){
-
             if (isset($this->score[$user]['halfwayScore'][$i - 1])) {
                 $this->score[$user]['halfwayScore'][$i] = $this->score[$user]['eachFlameScore'][$i] + $this->score[$user]['halfwayScore'][$i -1];
             } else {
